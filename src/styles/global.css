@@ -1,0 +1,68 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Cores Content*/
+    --content-primary: #ffffff;
+    --content-secondary: #98959D;
+    --content-tertiary: #666666;
+    --content-brand: #9282FA;
+
+    /*Cores Background*/
+    --background-primary: #151515;
+    --background-secondary: #1E1E1E;
+    --background-tertiary: #23242C;
+    --background-brand: #9282FA;
+    --background-highlights: #BDB4FA;
+
+    /*Cores Border*/
+    --border-primary: #3E3C41;
+    --border-secondary: #86818C;
+    --border-brand: #9282FA;
+    --border-dividor: #353339;
+
+    /*Cores Accent*/
+    --accent-blue: #027DF0;
+    --accent-blue-light: #16487A;
+    --accent-yellow: #F0DC02;
+    --accent-yellow-light: #756E1B;
+    --accent-orange: #F09102;
+    --accent-orange-light: #75501B;
+
+    /*Tipografia*/
+    --title: 700 1.5rem/2rem "Inter tight", sans-serif;
+    --paragraph-medium: 500 0.875rem/1.5rem "Inter", sans-serif;
+    --paragraph-small: 500 0.75rem/1rem "Inter", sans-serif;
+    --label-large: 700 1rem/1.5rem "Inter", sans-serif;
+    --label-medium: 700 0.875rem/1.5rem "Inter", sans-serif;
+    --label-small: 700 0.75rem/1rem "Inter", sans-serif;
+    --link: 500 0.75rem/1rem "Inter", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background-primary);
+    color: var(--content-primary);
+    font-family: "Inter", sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
