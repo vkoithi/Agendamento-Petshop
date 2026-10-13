@@ -1,0 +1,51 @@
+.main {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 1rem;
+    gap: 1rem;
+
+    & > header {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        & h1{
+            font: var(--title);
+        }
+
+        & p {
+            font: var(--paragraph-medium);
+            color: var(--content-secondary); 
+        }
+    }
+
+    & > label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        border: 1px solid var(--border-primary);
+        border-radius: 7px;
+
+        padding: 0.5rem;
+        gap: 1rem;
+
+        &:focus-within{
+            border-color: var(--border-brand);
+        }
+
+        & input {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            color: var(--content-secondary);
+        }
+    }
+
+    & > section {
+        background-color: var(--background-secondary);
+        border-radius: 5px;
+    }
+}
+

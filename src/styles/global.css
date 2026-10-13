@@ -47,6 +47,8 @@ body {
     background-color: var(--background-primary);
     color: var(--content-primary);
     font-family: "Inter", sans-serif;
+
+    margin: 1rem;
 }
 
 button,
