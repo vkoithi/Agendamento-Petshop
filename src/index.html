@@ -52,10 +52,30 @@
         <section class="night">
             <header>
                 <img src="assets/icons/Moon-Stars--Streamline-Solar.svg" alt="">
+                
                 <strong>Noite</strong>
+
                 <span>19h-21h</span>
             </header>
-            <ul id="period-night">    
+
+            <ul id="period-night">
+                <li>
+                    <strong class="schedule-hour">
+                        20:00
+                    </strong>
+
+                    <span class="schedule-client">
+                        <strong>Max</strong> / Camila Santos
+                    </span>
+
+                    <span class="schedule-service">
+                        Limpeza de Dentes
+                    </span>
+
+                    <button type="button" class="remove-button">
+                        Remover agendamento
+                    </button>
+                </li>
             </ul>
         </section>
     </main>
@@ -64,99 +84,100 @@
         Novo Agendamento
     </button>
 
-    <div class="modal">
-        <form class="form">
+    <div class="modal-overlay hide">
+        <div class="modal hide">
             <button type="button" id="close-modal" aria-label="Fechar modal">
                 <img src="assets/icons/Close-Small-Fill--Streamline-Rounded-Fill---Material-Symbols.svg" alt="">
             </button>
-
+        
             <header>
                 <h2>Agende um atendimento</h2>
                 <p>Preencha os dados do cliente para realizar o agendamento:</p>
             </header>
-
-            <section id="tutor">
-                <strong>Nome do tutor</strong>
-                <label for="tutor-name">
-                    <img src="assets/icons/User--Streamline-Solar.svg" alt="">
-                    <input 
-                        type="text" 
-                        id="tutor-name"
-                        placeholder="Helena Souza"
-                        required
-                    >
-                </label>
-            </section>
-
-            <section id="pet">
-                <strong>Nome do pet</strong>
-                <label for="pet-name">
-                    <img src="assets/icons/Pet-Paw--Streamline-Core.svg" alt="">
-                    <input 
-                        type="text" 
-                        id="pet-name"
-                        placeholder="Cheddar"
-                        required
-                    >
-                </label>
-            </section>
-
-            <section id="telephone">
-                <strong>Telefone</strong>
-                <label for="phone-number">
-                    <img src="assets/icons/Phone--Streamline-Solar.svg" alt="">
-                    <input 
-                        type="tel" 
-                        id="phone-number"
-                        placeholder="(00) 0 0000-0000"
-                        required
-                    >
-                </label>
-            </section>
-
-            <section id="description">
-                <strong>Descrição do serviço</strong>
-                <label for="service-description">
-                    <textarea
-                        name="services"
-                        id="service-description"
-                        rows="5"
-                        cols="20"
-                        required
-                    ></textarea>
-                </label>
-            </section>
-
-            <section id="scheduling">
-                <strong>Data</strong>
-                <label for="schedule">
-                    <img src="assets/icons/Calendar-Minimalistic--Streamline-Solar.svg" alt="">
-                    <input 
-                        type="date" 
-                        id="schedule"
-                        required
-                    >
-                    <img src="assets/icons/Icon.svg" alt="">
-                </label> 
-            </section>
-
-            <section id="hour">
-                <strong>Hora</strong>
-                <label for="appointment-time">
-                    <img src="assets/icons/Clock-Circle--Streamline-Solar.svg" alt="">
-                    <input 
-                        type="time" 
-                        id="appointment-time"
-                        required    
-                    >
-                    <img src="assets/icons/Icon.svg" alt="">    
-                </label>
-            </section>
-            
-            <button type="submit">
-                Agendar
-            </button>
-        </form>
+        
+            <form class="form">
+                <section id="tutor">
+                    <label for="tutor-name">Nome do tutor</label>
+                    <div class="input-wrapper">
+                        <img src="assets/icons/User--Streamline-Solar.svg" alt="">
+                        <input
+                            type="text"
+                            id="tutor-name"
+                            name="tutor-name"
+                            placeholder="Helena Souza"
+                            required
+                        >
+                    </div>
+                </section>
+                <section id="pet">
+                    <label for="pet-name">Nome do pet</label>
+                    <div class="input-wrapper">
+                        <img src="assets/icons/Pet-Paw--Streamline-Core.svg" alt="">
+                        <input
+                            type="text"
+                            id="pet-name"
+                            name="pet-name"
+                            placeholder="Cheddar"
+                            required
+                        >
+                    </div>
+                </section>
+                <section id="telephone">
+                    <label for="phone-number">Telefone</label>
+                    <div class="input-wrapper">
+                        <img src="assets/icons/Phone--Streamline-Solar.svg" alt="">
+                        <input
+                            type="tel"
+                            id="phone-number"
+                            name="phone-number"
+                            placeholder="(00) 0 0000-0000"
+                            required
+                        >
+                    </div>
+                </section>
+                <section id="description">
+                    <label for="service-description">Descrição do serviço</label>
+                    <div class="input-wrapper">
+                        <textarea
+                            name="services"
+                            id="service-description"
+                            rows="5"
+                            cols="20"
+                            required
+                        ></textarea>
+                    </div>
+                </section>
+                <section id="scheduling">
+                    <label for="schedule">Data</label>
+                    <div class="input-wrapper">
+                        <img src="assets/icons/Calendar-Minimalistic--Streamline-Solar.svg" alt="">
+                        <input
+                            type="date"
+                            name="schedule"
+                            id="schedule"
+                            required
+                        >
+                        <img src="assets/icons/Icon.svg" alt="">
+                    </div>
+                </section>
+                <section id="hour">
+                    <label for="appointment-time">Hora</label>
+                    <div class="input-wrapper">
+                        <img src="assets/icons/Clock-Circle--Streamline-Solar.svg" alt="">
+                        <input
+                            type="time"
+                            id="appointment-time"
+                            required
+                        >
+                        <img src="assets/icons/Icon.svg" alt="">
+                    </div>
+                </section>
+        
+                <button type="submit">
+                    Agendar
+                </button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
