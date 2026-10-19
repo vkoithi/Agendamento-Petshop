@@ -18,11 +18,11 @@ closeModal.addEventListener("click", () => {
 })
 
 document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
+    if (event.key === "Escape" && !modal.classList.contains("hide")){
         modal.classList.add("hide")
         
         buttonSchedule.focus()
-    }
+    }    
 })
 
 modal.addEventListener("click", (event) => {
