@@ -160,15 +160,15 @@
 
 .schedule-hour {
   grid-area: hour;
+  align-self: baseline;
 
   color: var(--content-primary);
   font: var(--label-medium);
 }
 
-/* Cliente */
-
 .schedule-client {
   grid-area: client;
+  align-self: baseline;
 
   color: var(--content-secondary);
   font: var(--paragraph-small);
@@ -202,6 +202,11 @@
 
   color: var(--content-tertiary);
   font: var(--link);
+
+  &:hover {
+    color: var(--content-primary);
+    text-decoration: underline;
+  }
 }
 
 /* =========================
@@ -228,4 +233,8 @@
   text-transform: uppercase;
 
   box-shadow: 0 4px 12px rgba(146, 130, 250, 0.35);
+
+  &:hover {
+    background-color: var(--background-highlights);
+  }
 }
